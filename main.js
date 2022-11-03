@@ -166,7 +166,18 @@ var Clock = (function() {
         },
         press = false,
         quiver = true,
-        texts = ["Type me","Touch Nose", "Blink ;)", "Show tongue", "Remember", "You beautifull", "As you are", "Now Smile :)", "<3"],
+        texts = [
+              "Ori, Type Me",
+      "Happy Birthday",
+      "We Wish You",
+      "The Very Best",
+      "That Life",
+      "Has To Offer",
+      "Filled With Joy",
+      "And Happiness",
+      "Yours,",
+      "💗 RnD Team 💗"
+        ],
 
         text = texts[0],
         textNum = 0,
