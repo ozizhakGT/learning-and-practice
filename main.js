@@ -167,16 +167,17 @@ var Clock = (function() {
         press = false,
         quiver = true,
         texts = [
-              "Ori, Type Me",
-      "Happy Birthday",
-      "We Wish You",
-      "The Very Best",
-      "That Life",
-      "Has To Offer",
-      "Filled With Joy",
-      "And Happiness",
-      "Yours,",
-      "💗 RnD Team 💗"
+            "Ori, Type Me",
+            "Happy Birthday",
+            "We Wish You",
+            "The Very Best",
+            "That Life",
+            "Has To Offer",
+            "Filled With Joy",
+            "And Happiness",
+            "Yours,",
+            "💗 RnD Team 💗",
+            "DANCE 🕺🏻"
         ],
 
         text = texts[0],
@@ -440,7 +441,12 @@ var Particle = function(canvas) {
     };
 };
 
-document.getElementById('mp3').play();
 setTimeout(function() {
     Clock.init('canvas');
+
+    const play = document.body.addEventListener("click", () => {
+        document.getElementById("mp3").play();
+
+        removeEventListener(play)
+    })
 }, 2000)
