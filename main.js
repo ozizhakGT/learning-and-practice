@@ -167,7 +167,7 @@ var Clock = (function() {
         press = false,
         quiver = true,
         texts = [
-            "Ori, Type Me",
+            "Ori, Click On Me",
             "Happy Birthday",
             "We Wish You",
             "The Very Best",
